@@ -8,7 +8,7 @@ To start, we have to enable SkyTap API's: https://help.skytap.com/csh-api-token.
 This is not enabled by default, so you will need to enable an API token for your user account. Please treat this token securely and do not document it in your code. It's reccomended to store your username and API Token as an environment variable on the host you will be running Terraform from. 
 
 For example, these Terraform files use the variable skytapusername & skytaptoken. To set these an ENV on windows that Terraform will read, you can user the following commands (these commands are not persistent and need to be re-entered after a reboot):
-    Set-Item -Path env:TF_VAR_skytapusername -Value "ndasilva@zscaler.com"
+    Set-Item -Path env:TF_VAR_skytapusername -Value "somuser@skytap.com"
     Set-Item -Path env:TF_VAR_skytaptoken -Value "ABC1234567890"
 
 To read these ENV you can use these commands to verify:
